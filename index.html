@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="#" id="logo">
+          <img src="assets/images/logo.svg" alt="#">
+        </a>
+        <ul id="nav-menu">
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="cart">
+          <button>
+            <div class="cart-badge">0</div>
+            <img src="assets/images/icon-cart.svg" alt="#">
+          </button>
+          <div class="cart-dropdown">
+            <div class="cart-title">Cart</div>
+            <div class="cart-list"></div>
+            <div class="checkout"><button>Checkout</button></div>
+          </div>
+        </div>
+        <button id="user">
+          <img src="assets/images/image-avatar.png" alt="#">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="product-img">
+        <div class="main-img">
+          <img src="assets/images/image-product-1.jpg" alt="#">
+        </div>
+        <ul class="thumbnail-list">
+          <li class="selected-img image-product-1"><img src="assets/images/image-product-1-thumbnail.jpg" alt="#"></li>
+          <li class="image-product-2"><img src="assets/images/image-product-2-thumbnail.jpg" alt="#"></li>
+          <li class="image-product-3"><img src="assets/images/image-product-3-thumbnail.jpg" alt="#"></li>
+          <li class="image-product-4"><img src="assets/images/image-product-4-thumbnail.jpg" alt="#"></li>
+        </ul>
+      </div>
+      <div class="product-info">
+        <div class="company-name">Sneaker Company</div>
+        <div class="product-name">Fall Limited Edition Sneakers</div>
+        <div class="product-description">
+          These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they'll withstand everything the weather can offer.
+        </div>
+        <div class="product-price">
+          <div class="current-price">
+            <div class="price">$125.00</div>
+            <div class="discount">50%</div>
+          </div>
+          <div class="last-price">$250.00</div>
+        </div>
+        <div class="buying-area">
+          <div class="quantity">
+            <button class="minus"><img src="assets/images/icon-minus.svg" alt="#"></button>
+            <div class="numbers">0</div>
+            <button class="plus"><img src="assets/images/icon-plus.svg" alt="#"></button>
+          </div>
+          <button class="add-to-cart">
+            <img src="assets/images/icon-cart.svg" alt="#">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/minxtun">minxtun</a>.
+  </footer>
+
+  <div class="lightbox">
+    <button class="close"><img src="assets/images/icon-close.svg" alt="#"></button>
+    <div class="product-img">
+      <div class="main-img">
+        <button class="prev"><img src="assets/images/icon-previous.svg" alt=""></button>
+        <img src="assets/images/image-product-1.jpg" alt="#">
+        <button class="next"><img src="assets/images/icon-next.svg" alt=""></button>
+      </div>
+      <ul class="thumbnail-list">
+        <li class="selected-img image-product-1"><img src="assets/images/image-product-1-thumbnail.jpg" alt="#"></li>
+        <li class="image-product-2"><img src="assets/images/image-product-2-thumbnail.jpg" alt="#"></li>
+        <li class="image-product-3"><img src="assets/images/image-product-3-thumbnail.jpg" alt="#"></li>
+        <li class="image-product-4"><img src="assets/images/image-product-4-thumbnail.jpg" alt="#"></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
