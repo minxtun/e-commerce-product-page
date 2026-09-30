@@ -14,18 +14,21 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid hsl(220, 14%, 75%, 0.3);
+  flex-shrink: 0;
 }
 
 .nav-left {
   display: flex;
   align-items: center;
   gap: 70px;
+  flex-shrink: 0;
 }
 
 .nav-right {
   display: flex;
   align-items: center;
   gap: 40px;
+  flex-shrink: 0;
 }
 
 #nav-menu {

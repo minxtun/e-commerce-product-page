@@ -109,7 +109,10 @@ $(".cart-list").click(function(event) {
   let removeBtn = event.target.closest(".item-remove");
   if (removeBtn) {
     let cartItem = removeBtn.closest(".cart-item");
+    let itemQuantity = +cartItem.querySelector(".item-quantity").innerHTML;
     if (cartItem) {
+      cartItems -= itemQuantity;
+      document.querySelector(".cart-badge").innerHTML = cartItems;
       cartItem.remove();
     }
   }
